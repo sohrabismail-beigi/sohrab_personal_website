@@ -6,7 +6,7 @@ title: Home
 
 I'm Sohrab Ismail-Beigi. My day job is at Yale, in the Department of Applied Physics, where my research group studies materials using first-principles (*ab initio*) electronic structure methods. You can find all of that on [my work page](https://volga.eng.yale.edu/people/Sohrab).
 
-This is a simple personal website for a few items of note.
+This is a simple personal website for a few items of note. It may or may not be under construction...
 
 ## Gravity Wars
 

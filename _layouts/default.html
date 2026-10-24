@@ -36,7 +36,8 @@
   </main>
 
   <footer class="site-footer">
-    <p>© {{ 'now' | date: '%Y' }} Sohrab Ismail-Beigi · <a href="{{ site.work_url }}">Ismail-Beigi Group at Yale</a></p>
+    <p>© {{ site.time | date: '%Y' }} Sohrab Ismail-Beigi · <a href="{{ site.work_url }}">Ismail-Beigi Group at Yale</a></p>
+    <p class="updated">Last updated <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: '%B %-d, %Y' }}</time></p>
   </footer>
 </body>
 </html>

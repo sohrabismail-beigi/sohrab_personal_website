@@ -140,6 +140,7 @@ hr { border: 0; border-top: 1px dashed rgba(169, 176, 207, 0.35); margin: 2.4rem
   text-align: center;
 }
 .site-footer a { color: var(--muted); }
+.site-footer .updated { margin-top: -0.6rem; font-size: 0.75rem; opacity: 0.8; }
 
 @media (prefers-reduced-motion: reduce) {
   .torpedo { animation: none; }
