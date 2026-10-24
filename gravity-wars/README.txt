@@ -23,9 +23,9 @@ When the game starts, two windows pop up.  The main window is the
 place.  The other window is the control window used to play the game.
 
 The battle field contains the two ships and various planets (colored
-circles) of various sizes and masses.  Plants create gravitational
+circles) of various sizes and masses.  Planets create gravitational
 fields that affect the motion of the torpedo, and the gravitational
-field of the planets add up following the usual Newtonian inverse
+fields of the planets add up following the usual Newtonian inverse
 square law.  Planet colors indicate density: red is low, green is
 medium, and blue is high.
 
@@ -104,7 +104,7 @@ make the program executable then just type the name "gravity_wars.pl".
 I have tested this program and it works on a Linux/X windows box with
 perl v5.6.1 and Tk 800.021.
 
-You can look a the command line options by running the program with
+You can look at the command line options by running the program with
 "-h" or "--help" (i.e. "perl gravity_wars.pl --help").
 
 If you want to run with a bigger screen for the battle field, you can
@@ -145,7 +145,7 @@ source code is not free.
 In 2002, I decided to do a rewrite for the following reasons: (1) to
 have fun and kill some time, (2) to make sure the code is now
 copylefted and free software, and (3) to have a version that runs on a
-modern type of system.  My choice was to user the PERL programming
+modern type of system.  My choice was to use the PERL programming
 language (both to learn it and because it is a great language).  For
 graphics I used the Tk library for perl.  Both the perl program and Tk
 are available free at http://www.perl.com.
