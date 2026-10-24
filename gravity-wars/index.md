@@ -5,15 +5,13 @@ description: A two-player space game, first written in Turbo Pascal in 1989 and 
 
 # Gravity Wars
 
-Two spaceships, a handful of planets, and Newtonian gravity: players take turns firing photon torpedoes at each other's ship, and the planets bend every shot. The [README](README.txt) explains how to play. What follows is the page I wrote for the 2002 release.
+Two spaceships, a handful of planets, and Newtonian gravity: players take turns firing photon torpedoes at each other's ship, and the planets bend every shot.
 
 ## Brief history
 
-Back in the late 1980s, I wrote a game for IBM DOS machines, using Turbo Pascal, called "gravwars" that was distributed, much more widely than I thought or knew about, through BBSs (bulletin board systems) and then through the Internet ftp servers and whatnot. A certain number of people liked the game and would email me about the latest version in the intervening years.
+Back in the late 1980s when I was in high school, I wrote a game for IBM DOS machines, using Turbo Pascal, called "gravwars" which was based on an Amiga game that someone else had written and that I liked a lot. That version was distributed, much more widely than I thought or knew about, through BBSs (bulletin board systems) and then through the Internet ftp servers and whatnot. A certain number of people liked the game and would email me about the latest version in the intervening years.
 
 Alas with the demise of DOS and my graduation from high school, I did not have the time to rewrite the game for a more modern system. Recently, I had a bit of time free so I did a rewrite but in the most rapid and least difficult manner: thus some of the features are missing and it uses PERL, which makes my life as programmer much easier, but requires the user to have PERL and some libraries.
-
-## Current status
 
 I took the old Turbo Pascal code and converted the essential parts into PERL. The graphics engine is the PERL Tk library. Thus in some sense the new version is much more universal since PERL exists on many different kinds of systems and is a universal language (unlike Turbo Pascal and graphics command unique to the DOS system with VGA/EGA of the 1980s).
 
