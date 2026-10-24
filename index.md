@@ -1,0 +1,22 @@
+---
+title: Home
+---
+
+# Hello there!
+
+I'm Sohrab Ismail-Beigi. My day job is at Yale, in the Department of Applied Physics, where my research group studies materials using first-principles (*ab initio*) electronic structure methods. You can find all of that on [my work page](https://volga.eng.yale.edu/people/Sohrab).
+
+This is a simple personal website for a few items of note.
+
+## Gravity Wars
+
+A two-player space game: each player fires photon torpedoes at the other's ship, and the planets' gravity bends every shot. I wrote the first version in Turbo Pascal in 1989 and rewrote it in Perl/Tk in 2002.
+
+[Read the history, see some files, and links to new implementations by others](gravity-wars/)
+
+## Latin words and phrases
+
+About 350 Latin words and phrases with their meanings, from *ab initio* to *vulgo*.
+
+- [Latin words and phrases (PDF)](files/latinwords.pdf)
+- [LaTeX source](files/latinwords.tex)

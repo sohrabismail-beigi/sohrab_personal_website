@@ -1,0 +1,29 @@
+# Site settings. After changing this file, the live site rebuilds within a minute or two.
+title: Sohrab Ismail-Beigi
+description: Personal interests, side projects, and odds and ends.
+url: https://sohrabismail-beigi.github.io
+baseurl: /sohrab_personal_website
+work_url: https://volga.eng.yale.edu/people/Sohrab
+
+# Links shown in the menu at the top of every page.
+nav:
+  - title: Home
+    url: /
+  - title: Gravity Wars
+    url: /gravity-wars/
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+markdown: kramdown
+kramdown:
+  input: GFM
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor

@@ -1,0 +1,146 @@
+/* Colors borrowed from Gravity Wars: planets are red (light), green (medium), blue (dense). */
+:root {
+  --space: #0b1026;
+  --space-raised: #151c3f;
+  --ink: #ece8dc;
+  --muted: #a9b0cf;
+  --red: #ff6b5e;
+  --green: #6ee7a8;
+  --blue: #6cb4ff;
+  --gold: #ffd166;
+  --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  --sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { font-size: 112.5%; }
+
+body {
+  margin: 0;
+  color: var(--ink);
+  font-family: var(--sans);
+  line-height: 1.65;
+  background-color: var(--space);
+  /* A tiled starfield. */
+  background-image:
+    radial-gradient(circle at 23px 37px, #fff 0 1px, transparent 1.6px),
+    radial-gradient(circle at 141px 88px, #cfd8ff 0 1px, transparent 1.6px),
+    radial-gradient(circle at 211px 163px, #fff 0 1.4px, transparent 2px),
+    radial-gradient(circle at 67px 221px, #ffe9b0 0 1px, transparent 1.6px),
+    radial-gradient(circle at 272px 41px, #fff 0 0.8px, transparent 1.4px),
+    radial-gradient(circle at 178px 262px, #b9f5d6 0 0.8px, transparent 1.4px),
+    radial-gradient(circle at 98px 140px, #fff 0 0.6px, transparent 1.2px);
+  background-size: 300px 290px;
+  background-attachment: fixed;
+}
+
+a { color: var(--gold); text-underline-offset: 0.18em; }
+a:hover { color: #fff; }
+a:focus-visible { outline: 2px dashed var(--gold); outline-offset: 3px; }
+
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: 0.5rem;
+  background: var(--gold);
+  color: var(--space);
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.3rem;
+}
+.skip-link:focus { left: 0.5rem; }
+
+/* Header */
+.site-header {
+  max-width: 46rem;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 2rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  color: var(--ink);
+  text-decoration: none;
+}
+.brand:hover { color: var(--ink); }
+.brand-text { display: flex; flex-direction: column; }
+.brand-name { font-family: var(--mono); font-size: 1.15rem; font-weight: 700; letter-spacing: 0.02em; }
+.brand-tagline { color: var(--muted); font-size: 0.8rem; }
+
+.orbit { width: 3.2rem; height: 3.2rem; flex: none; overflow: visible; }
+.orbit-path { fill: none; stroke: var(--muted); stroke-width: 0.6; stroke-dasharray: 2 3; opacity: 0.6; }
+.planet { fill: var(--blue); }
+.torpedo { fill: var(--gold); transform-box: view-box; transform-origin: 24px 24px; animation: orbit 7s linear infinite; }
+@keyframes orbit { to { transform: rotate(360deg); } }
+
+.site-nav { display: flex; flex-wrap: wrap; gap: 0.4rem 1.1rem; font-family: var(--mono); font-size: 0.85rem; }
+.site-nav a { color: var(--muted); text-decoration: none; padding: 0.15rem 0; border-bottom: 2px solid transparent; }
+.site-nav a:hover { color: var(--ink); }
+.site-nav a[aria-current="page"] { color: var(--ink); border-bottom-color: var(--gold); }
+
+/* Main content */
+.content {
+  max-width: 46rem;
+  margin: 1rem auto 2rem;
+  padding: 1.5rem 1.25rem 2rem;
+  background: rgba(11, 16, 38, 0.82);
+  border-radius: 1rem;
+}
+@media (min-width: 48rem) {
+  .content { padding: 2rem 2.5rem 2.5rem; border: 1px solid rgba(169, 176, 207, 0.15); }
+}
+
+h1, h2, h3 { font-family: var(--mono); line-height: 1.25; }
+h1 { font-size: 2rem; margin: 0 0 1rem; }
+h2 { font-size: 1.3rem; margin: 2.4rem 0 0.8rem; }
+h3 { font-size: 1.05rem; margin: 1.8rem 0 0.4rem; color: var(--gold); }
+
+/* Each section heading gets a little planet, cycling through the three planet colors. */
+h2::before {
+  content: "";
+  display: inline-block;
+  width: 0.7em;
+  height: 0.7em;
+  margin-right: 0.55em;
+  border-radius: 50%;
+  background: var(--red);
+  box-shadow: 0 0 0.6em rgba(255, 255, 255, 0.25);
+  vertical-align: 0.02em;
+}
+h2:nth-of-type(3n+2)::before { background: var(--green); }
+h2:nth-of-type(3n)::before { background: var(--blue); }
+
+ul { padding-left: 1.3rem; }
+li { margin: 0.3rem 0; }
+li::marker { color: var(--muted); }
+
+code, pre { font-family: var(--mono); font-size: 0.88em; }
+code { background: var(--space-raised); padding: 0.1em 0.35em; border-radius: 0.25rem; }
+pre { background: var(--space-raised); padding: 0.9rem 1rem; border-radius: 0.5rem; overflow-x: auto; }
+pre code { background: none; padding: 0; }
+
+blockquote { margin: 1.2rem 0; padding: 0.2rem 1rem; border-left: 3px solid var(--gold); color: var(--muted); }
+
+hr { border: 0; border-top: 1px dashed rgba(169, 176, 207, 0.35); margin: 2.4rem 0; }
+
+/* Footer */
+.site-footer {
+  max-width: 46rem;
+  margin: 0 auto;
+  padding: 0 1.25rem 2.5rem;
+  color: var(--muted);
+  font-size: 0.8rem;
+  text-align: center;
+}
+.site-footer a { color: var(--muted); }
+
+@media (prefers-reduced-motion: reduce) {
+  .torpedo { animation: none; }
+}
