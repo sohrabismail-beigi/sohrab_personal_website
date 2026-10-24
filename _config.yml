@@ -11,6 +11,8 @@ nav:
     url: /
   - title: Gravity Wars
     url: /gravity-wars/
+  - title: Latin words
+    url: /latin/
 
 defaults:
   - scope:

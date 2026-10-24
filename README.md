@@ -11,6 +11,14 @@ Source for https://sohrabismail-beigi.github.io/sohrab_personal_website/, built 
 
 You can edit any of these on github.com (click the file, then the pencil icon) and commit. The live site updates a minute or two later.
 
+## Updating the Latin list
+
+`files/latinwords.tex` is the master copy. After editing it, rebuild the PDF with `pdflatex`, then regenerate the web page version (`latin/index.md`) from the repository root:
+
+```bash
+python3 _scripts/latin_to_markdown.py
+```
+
 ## Adding a file for download
 
 Put it in `files/` (or next to the page it belongs to), then link to it from a page, for example:

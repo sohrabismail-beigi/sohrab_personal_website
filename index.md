@@ -18,5 +18,6 @@ A two-player space game: each player fires photon torpedoes at the other's ship,
 
 About 350 Latin words and phrases with their meanings, from *ab initio* to *vulgo*. This was a fun project that started with a few words and then got out of hand :-)
 
+- [Latin words and phrases (web page)](latin/)
 - [Latin words and phrases (PDF)](files/latinwords.pdf)
 - [LaTeX source](files/latinwords.tex)
