@@ -32,6 +32,8 @@ Files you can download:
 ## Gravity Wars elsewhere
 
 - [Grav Wars](https://www.gravwars.com/): a really great new implementation by someone else that you can play right in your browser, on a computer or a phone. Kudos for doing this!
+- [ClassicReload](https://classicreload.com/gravity-wars.html): play the original 1989 DOS version right in your browser.
+- [DOS.Zone](https://dos.zone/gravity-wars-apr-23-1989/): play the original 1989 DOS version in your browser, with on-screen controls for phones.
 - [MobyGames](https://www.mobygames.com/game/62124/gravity-wars/): a brief description of the game, with old images of what it looked like.
 - [LaunchBox Games Database](https://gamesdb.launchbox-app.com/games/details/91624-gravity-wars): another brief description, with screenshots of the original DOS version.
 
