@@ -25,7 +25,10 @@
     </a>
     <nav class="site-nav" aria-label="Main">
       {%- for item in site.nav %}
-      <a href="{{ item.url | relative_url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.title }}</a>
+      {%- assign current = false %}
+      {%- if page.url == item.url %}{% assign current = true %}
+      {%- elsif item.url != "/" and page.url contains item.url %}{% assign current = true %}{% endif %}
+      <a href="{{ item.url | relative_url }}"{% if current %} aria-current="page"{% endif %}>{{ item.title }}</a>
       {%- endfor %}
       <a href="{{ site.work_url }}">Work page&nbsp;↗</a>
     </nav>

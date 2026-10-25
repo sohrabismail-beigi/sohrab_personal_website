@@ -7,6 +7,8 @@ description: A two-player space game, first written in Turbo Pascal in 1989 and 
 
 Two spaceships, a handful of planets, and Newtonian gravity: players take turns firing photon torpedoes at each other's ship, and the planets bend every shot.
 
+**[▶ Play it in your browser](play/)**: the 2002 PERL version, ported to JavaScript.
+
 ## Brief history
 
 Back in the late 1980s when I was in high school, I wrote a game for IBM DOS machines, using Turbo Pascal, called "gravwars," which was based on an Amiga game that someone else had written and that I liked a lot. That version was distributed, much more widely than I thought or knew about, through BBSs (bulletin board systems) and then through Internet FTP servers and whatnot. A certain number of people liked the game and would email me about the latest version in the intervening years.

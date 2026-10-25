@@ -130,6 +130,68 @@ blockquote { margin: 1.2rem 0; padding: 0.2rem 1rem; border-left: 3px solid var(
 
 hr { border: 0; border-top: 1px dashed rgba(169, 176, 207, 0.35); margin: 2.4rem 0; }
 
+/* Gravity Wars game */
+.gw-field {
+  position: relative;
+  width: 100%;
+  max-width: 640px;
+  aspect-ratio: 4 / 3;
+  margin: 1.5rem auto 0;
+  background: #000;
+  border: 1px solid rgba(169, 176, 207, 0.35);
+}
+.gw-field canvas { position: absolute; inset: 0; width: 100%; height: 100%; }
+.gw-gameover {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.55);
+  font-family: var(--mono);
+  font-size: 1.2rem;
+}
+.gw-gameover[hidden] { display: none; }
+.gw-gameover p { margin: 0 0 0.8rem; }
+
+.gw-controls {
+  max-width: 640px;
+  margin: 0.9rem auto 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem 1.2rem;
+  font-family: var(--mono);
+  font-size: 0.85rem;
+}
+.gw-player { margin: 0; flex-basis: 100%; }
+.gw-controls input {
+  width: 5.5em;
+  margin-left: 0.3rem;
+  padding: 0.3rem 0.4rem;
+  font: inherit;
+  color: var(--ink);
+  background: var(--space-raised);
+  border: 1px solid var(--muted);
+  border-radius: 0.3rem;
+}
+.gw-buttons { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.gw-controls button, .gw-gameover button {
+  padding: 0.35rem 0.9rem;
+  font: inherit;
+  color: var(--ink);
+  background: var(--space-raised);
+  border: 1px solid var(--muted);
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+.gw-controls button:hover:not(:disabled), .gw-gameover button:hover { border-color: var(--gold); }
+.gw-controls button:disabled { opacity: 0.45; cursor: default; }
+#gw-fire { color: var(--space); background: var(--gold); border-color: var(--gold); font-weight: 700; }
+.gw-status { max-width: 640px; min-height: 1.6em; margin: 0.6rem auto 0; color: var(--muted); font-size: 0.85rem; }
+.gw-status.error { color: var(--red); }
+
 /* Footer */
 .site-footer {
   max-width: 46rem;

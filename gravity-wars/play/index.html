@@ -1,0 +1,50 @@
+---
+title: Play Gravity Wars
+description: Play Gravity Wars in your browser, a JavaScript port of the 2002 PERL/Tk version.
+---
+
+<h1>Play Gravity Wars</h1>
+
+<p>This is the 2002 PERL/Tk version of the game, ported to JavaScript so it runs right in your browser: same physics, same random battlefields, same ships. Two players take turns on the same computer or phone.</p>
+
+<div class="gw-game">
+  <div class="gw-field">
+    <canvas id="gw-canvas" width="640" height="480" role="img" aria-label="Gravity Wars battlefield"></canvas>
+    <canvas id="gw-overlay" width="640" height="480" aria-hidden="true"></canvas>
+    <div class="gw-gameover" id="gw-gameover" hidden>
+      <p id="gw-gameover-text">Game over</p>
+      <button type="button" id="gw-ok">OK</button>
+    </div>
+  </div>
+
+  <form class="gw-controls" id="gw-controls" novalidate>
+    <p class="gw-player">Current player: <strong id="gw-player">1</strong> <span id="gw-ship">(Enterprise)</span></p>
+    <label>Angle (0–360) <input id="gw-angle" type="number" step="any" min="0" max="360" inputmode="decimal" value="0"></label>
+    <label>Speed (0–10) <input id="gw-speed" type="number" step="any" min="0" max="10" inputmode="decimal" value="1"></label>
+    <span class="gw-buttons">
+      <button type="submit" id="gw-fire">Fire</button>
+      <button type="button" id="gw-redraw">Redraw</button>
+      <button type="button" id="gw-new">New Game</button>
+    </span>
+  </form>
+  <p class="gw-status" id="gw-status" role="status" aria-live="polite"></p>
+</div>
+
+<h2>How to play</h2>
+
+<ul>
+  <li>Player 1 flies the Enterprise (the round disk with the red dot in the middle); player 2 flies the Klingon ship.</li>
+  <li>On your turn, enter an angle and a speed, then press <strong>Fire</strong> (or Enter). Angles are in degrees: 0 is 3 o'clock and 90 is straight up. Speeds go from 0 to 10.</li>
+  <li>The planets' gravity bends the torpedo's path. Colors show density: red is low, green is medium, and blue is high.</li>
+  <li>If your torpedo hits a planet or leaves the planetary system, your turn is over. Hit the other ship to win, but be careful: you can also hit your own!</li>
+  <li>Once in a while there are invisible black holes. From far away they act like a normal, medium-sized planet, but up close their gravity gets very strong.</li>
+  <li><strong>Redraw</strong> clears away old torpedo tracks. <strong>New Game</strong> makes a new random battlefield; press it until you get one you like.</li>
+</ul>
+
+<p>The full rules and history are in the <a href="../README.txt">README</a>, and the original PERL program is on the <a href="../">Gravity Wars page</a>.</p>
+
+<h2>About this version</h2>
+
+<p>The physics, random setups, ship drawings, and controls are carried over from <code>gravity_wars.pl</code>. The differences: the torpedo now flies across the screen in real time (the PERL version only showed the path after calculating it), the battlefield is always 640×480 and shrinks to fit smaller screens, messages appear below the battlefield instead of on the console, and a torpedo stuck in orbit for 40 seconds ends the turn.</p>
+
+<script src="{{ '/assets/js/gravity-wars.js' | relative_url }}"></script>

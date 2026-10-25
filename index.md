@@ -12,7 +12,7 @@ This is a simple personal website for a few items of note. It may or may not be 
 
 A two-player space game: each player fires photon torpedoes at the other's ship, and the planets' gravity bends every shot. I wrote the first version in Turbo Pascal in 1989 and rewrote it in PERL/Tk in 2002.
 
-[Read the history, see some files, and find links to new implementations by others](gravity-wars/)
+[History, files, links to new implementations](gravity-wars/)
 
 ## Latin words and phrases
 
