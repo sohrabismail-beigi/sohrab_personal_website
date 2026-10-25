@@ -7,7 +7,7 @@ description: A two-player space game, first written in Turbo Pascal in 1989 and 
 
 Two spaceships, a handful of planets, and Newtonian gravity: players take turns firing photon torpedoes at each other's ship, and the planets bend every shot.
 
-**[▶ Play it in your browser](play/)**: the 2002 PERL version, ported to JavaScript.
+**[▶ Play it in your browser](play/)**: the 2002 PERL version, ported to JavaScript. This is mainly for demonstration purposes; [see below](#gravity-wars-elsewhere) for much more sophisticated implementations by others.
 
 ## Brief history
 
